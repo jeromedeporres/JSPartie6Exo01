@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <title>JSPartie6Exo01</title>
+    <meta charset="utf-8">
+</head>
+<body>
+        <h2>Les années bissextiles entre 2020 et 2030</h2>
+    <script>
+        for (var years = 2020; years <= 2030; years++) {
+                if (((years % 4 == 0 ) && (years % 100 !=0)) || (years % 400 == 0)) {
+                document.write('<p style = "color:red">' + years + '<p>');
+        }else {
+                document.write('<p>' + years + '</p>');
+        }
+}
+</script>
+</body>
+</html>
